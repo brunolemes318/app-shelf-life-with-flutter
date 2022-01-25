@@ -1,5 +1,6 @@
 import 'package:app/global/components/button_hamburguer.dart';
 import 'package:app/theme/colors_theme.dart';
+import 'package:app/theme/typography_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:scaffold_gradient_background/scaffold_gradient_background.dart';
 
@@ -16,7 +17,10 @@ class ModelPage extends StatelessWidget {
       shadowColor: Colors.transparent,
       title: Padding(
         padding: const EdgeInsets.only(top: 30),
-        child: Text(title),
+        child: Text(
+          title,
+          style: TipographyTheme.themeFontAppBar,
+        ),
       ),
       elevation: 0,
     );
@@ -25,7 +29,9 @@ class ModelPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ScaffoldGradientBackground(
-        appBar: appbar(title: 'Home Page'),
+        appBar: appbar(
+          title: 'Home',
+        ),
         gradient: LinearGradient(
             colors: [ColorsTheme.color1Gradient, ColorsTheme.color2Gradient],
             begin: Alignment.topLeft,

@@ -1,3 +1,4 @@
+import 'package:app/global/components/card_text.dart';
 import 'package:app/theme/colors_theme.dart';
 import 'package:app/utils/constrains_%20util.dart';
 import 'package:flutter/material.dart';
@@ -22,6 +23,7 @@ class CardBanner extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Image.asset('/primeira.png'),
+          const CardText(),
           Image.asset('/segunda.png'),
         ],
       ),

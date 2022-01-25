@@ -1,5 +1,4 @@
 import 'package:app/global/components/card_banner.dart';
-import 'package:app/theme/colors_theme.dart';
 import 'package:app/theme/typography_theme.dart';
 import 'package:app/utils/constrains_%20util.dart';
 import 'package:app/utils/debug.dart';
@@ -22,7 +21,7 @@ class HomePage extends StatelessWidget {
                 children: [
                   Text(
                     'Oi ${Debug().name}',
-                    style: Tipography.themefont1,
+                    style: TipographyTheme.themefont1,
                   ),
                 ],
               ),
@@ -30,7 +29,7 @@ class HomePage extends StatelessWidget {
                 children: [
                   Text(
                     'Cadastre a validade das suas compras',
-                    style: Tipography.themefont2,
+                    style: TipographyTheme.themefont2,
                   )
                 ],
               ),
@@ -45,7 +44,7 @@ class HomePage extends StatelessWidget {
                 children: [
                   Text(
                     'Vencimentos',
-                    style: Tipography.themefont3,
+                    style: TipographyTheme.themefont3,
                   ),
                 ],
               ),
